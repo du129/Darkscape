@@ -1,0 +1,12 @@
+Name: null
+Attack: 1
+Defense: 1
+Strength: 1
+Constitution: 10
+Magic: 1
+Ranged: 1
+Prayer: 1
+Stamina: 100
+Fishing: 1
+Cooking: 1
+Summoning: 1

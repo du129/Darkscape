@@ -1,0 +1,10 @@
+Name  Damage  Accuracy  Value  Weight(kg)
+Rune Sword  612  850  20800  1.81
+Rune Dagger  480  850  4126  0.45
+Rune hatchet  306  850  6956  1.36
+Rune longsword  612  850  18091  1.81
+Rune Mace  480  850  7381  1.81
+Rune Pickaxe  372  850  18168  2.26
+Rune Scimitar  480  850  14508  1.81
+Rune Warhammer  745  850  23597  1.81
+Rune Battleaxe  745  850  23840  2.72

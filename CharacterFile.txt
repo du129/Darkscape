@@ -1,0 +1,7 @@
+Name: null
+Attack: 1
+Defense: 1
+Hitpoints: 10
+Stamina: 100
+Fishing: 1
+Cooking: 1

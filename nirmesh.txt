@@ -1,0 +1,8 @@
+Name: JDU
+Attack: 60
+Defense: 60
+Hitpoints: 780
+Strength: 79
+Stamina: 100
+Fishing: 1
+Cooking: 1

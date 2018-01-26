@@ -1,0 +1,10 @@
+Name  Armour  Value  Weight
+Rune Full Helm  170  19824  2.72
+Rune helm  160  10382  1.81
+Rune Platebody  195  37732  9.97
+Rune Chainbody  184  28719  6.80
+Rune Kiteshield  170  31300  5.44
+Rune sq shield  160  21683  3.63
+Rune Platelegs  187  37101  9.07
+Rune Boots  42  7546  1.36
+Rune Gauntlets  42  3409  0.23
