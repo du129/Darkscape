@@ -2,15 +2,19 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class WeaponsShop {
+    //this shop will have an unlimited number of items
+
     String type; //type of shop will determine what items the shop will sell
     // this should be chosen from an array which along with the location will determine what items will be soll
-    int items; //number of items in the shop
+    //int items; //number of items in the shop
     List<Weapons> weaponsList = new ArrayList<Weapons>();
 
+    Character character = new Character();
     public WeaponsShop(String type) {
         String file = "";
         if (type.equals("weapon")){
@@ -30,6 +34,20 @@ public class WeaponsShop {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    //I would like to design this feature around the User
+    public void sell(Weapons weapon){
+        int coins = character.getCoins();
+        if (weaponsList.contains(weapon)){
+            if(coins > weaponsList.get(weaponsList.indexOf(weapon)).getValue()){
+                character.backpack.add(weapon);
+                character.setCoins(coins - weaponsList.get(weaponsList.indexOf(weapon)).getValue());
+            }else{
+                System.out.println("You do not have enough money to purchase this item");
+            }
+        }else{
+            System.out.println("The item you requested is not listed");
         }
     }
     public static void main(String[] args) {

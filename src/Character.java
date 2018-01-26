@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,15 @@ public class Character {
     static int summoning = 1;
     static String name;
     static int coins = 0;
+    static ArrayList<Items> backpack = new ArrayList<Items>();;
+
+    public static int getCoins() {
+        return coins;
+    }
+
+    public static void setCoins(int coins) {
+        Character.coins = coins;
+    }
 
     public String getName() {
         return name;
@@ -120,6 +130,20 @@ public class Character {
     public static int CombatLevel(int attack, int defense, int ranged, int prayer, int strength, int constitution, int summoning, int magic){
         return (int)((13/10 * Math.max(Math.max(attack + strength, 2 * magic), 2 * ranged)) + defense + constitution + Math.floor((double)prayer / 2)
                 + Math.floor((double)summoning / 2)) / 4;
+    }
+
+    public Character() {
+    }
+
+    public static void addToInventory(Items items){
+        if (backpack.size() <= 28){
+            backpack.add(items);
+        }else{
+            System.out.println("Sorry your backpack is full");
+        }
+    }
+    public static void buyItem(Items items){
+        
     }
 
     public static void createfile() throws IOException {

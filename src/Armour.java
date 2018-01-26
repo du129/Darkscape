@@ -1,4 +1,4 @@
-public class Armour {
+public class Armour extends Items{
     String name;
     int armour;
     int value;

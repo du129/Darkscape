@@ -1,4 +1,4 @@
-public class Weapons {
+public class Weapons extends Items{
     String Name;
     int damage;
     int accuracy;
