@@ -210,8 +210,6 @@ public class Character {
     public static void teleport(String location){
         switch (location){
             case "falador":
-                //Falador falador = new Falador();
-                //falador.begin();
             case "lumbridge":
 
         }
